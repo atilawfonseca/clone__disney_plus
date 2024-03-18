@@ -1,0 +1,38 @@
+@use 'reset';
+@use 'container';
+@use 'variaveis';
+@use '_header';
+@use 'hero';
+
+
+body {
+    background-color: variaveis.$bg_color;
+}
+h2 {
+    color: variaveis.$titles_color;
+}
+
+@mixin title ($font_size:32px) {
+    font-size: $font_size;
+    letter-spacing: -.16px;
+    color: variaveis.$titles_color;
+}
+
+.title {
+    @include title;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.-is--btn {
+    color: transparent;
+    border-radius: 4px;
+    color: variaveis.$titles_color;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.--is-hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,57 @@
+@use 'variaveis';
+.hero {
+    background: url('../../dist/img/hero__mobile.png');
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    
+
+    @media screen and (min-width:500px) {
+        background: url('../../dist/img/hero__tablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    @media screen and (min-width:1024px) {
+        background: url('../../dist/img/hero__desktop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__box{
+        box-sizing: border-box;
+        padding-top: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__img-logo {
+            max-width: 100%;
+            width: 130px;
+            display: block;
+            margin: 0px auto;
+        } 
+        &__title {
+            text-align: center;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+        &__btn {
+            background-color: variaveis.$bg_btn; 
+            max-width: 540px;
+            padding: 16px 24px;
+            margin-top: 20px;
+            width: 100%;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        &__link {
+            cursor: pointer;
+            color: variaveis.$titles_color;
+            font-size: 20px;
+        } 
+
+    }
+
+    
+}
