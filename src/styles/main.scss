@@ -1,8 +1,10 @@
 @use 'reset';
 @use 'container';
 @use 'variaveis';
-@use '_header';
+@use 'header';
 @use 'hero';
+@use 'escolha_plano';
+
 
 
 body {
@@ -18,10 +20,22 @@ h2 {
     color: variaveis.$titles_color;
 }
 
+@mixin text ($font_size:16px) {
+    font-size: $font_size;
+    color: variaveis.$color_text;
+}
+
+.text {
+    @include text;
+}
+
 .title {
     @include title;
     font-weight: 700;
     line-height: 32px;
+}
+.title--small {
+    @include title(16px);
 }
 
 .-is--btn {
@@ -35,4 +49,14 @@ h2 {
 
 .--is-hidden {
     visibility: hidden;
+}
+
+section {
+    margin-bottom: 2em;
+}
+button {
+    background-color: variaveis.$bg_btn_plano_dis;
+    padding: 16px 20px;
+    font-size: 14px;
+    border: 1px solid variaveis.$bg_btn_plano_dis;
 }

@@ -33,22 +33,22 @@
         } 
         &__title {
             text-align: center;
-            margin-top: 16px;
+            margin-top: 20px;
             margin-bottom: 32px;
         }
         &__btn {
             background-color: variaveis.$bg_btn; 
             max-width: 540px;
-            padding: 16px 24px;
+            padding: 12px 24px;
             margin-top: 20px;
-            width: 100%;
+            width: 95%;
             margin-bottom: 8px;
-            letter-spacing: 2px;
+            
         }
         &__link {
             cursor: pointer;
             color: variaveis.$titles_color;
-            font-size: 20px;
+            font-size: 18px;
         } 
 
     }
