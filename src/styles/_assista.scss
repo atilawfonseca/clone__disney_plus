@@ -1,0 +1,19 @@
+.assista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75em;
+    &__diferentes-telas {
+        max-width: 100%;
+    }
+
+    &__texto {
+        text-align: center;
+        &__title {
+            margin-bottom: 1em;
+        }
+        &__paragrafo {
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+    }
+}

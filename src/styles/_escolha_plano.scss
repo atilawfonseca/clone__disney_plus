@@ -75,7 +75,25 @@
         }
 
         .beneficios {
-            
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                
+                &__item {
+
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: .5em;
+                        span{
+                            width: 100%;
+                            text-align: center;
+                            color: silver;
+                        }
+                    }
+                }
+            }
         }
     }
 
