@@ -6,6 +6,8 @@
 @use 'escolha_plano';
 @use 'assista';
 @use 'originais__disney';
+@use 'perguntas';
+@use 'rodape';
 
 
 
@@ -29,6 +31,9 @@ h2 {
 
 .text {
     @include text;
+}
+.text--small {
+    @include text(12px);
 }
 
 .title {
